@@ -1,26 +1,13 @@
-main, header, section, aside, footer {
-    
-}
-
-main {
-   
-}
-
-.header {
-    
-}
-
-.hero {
-    
-}
-
 .content {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.aside {
-    
-}
 
 .footer {
     
