@@ -58,6 +58,37 @@ function userChoice(id, userChoice) {
     let button = document.getElementById(id);
     button.onclick = function() {
         quiz.userChoice(userChoice);
-        askQuestion():
+        askQuestion();
     }
 }
+
+function progress() {
+    let currentQuestion = quiz.questionIndex + 1;
+    let progress = document.getElementById('progress');
+    progress.innerHTML = `Question ${currentQuestion} of ${quiz.questions.length}`;
+}
+
+let questions = [
+    new Question('What does HTML stand for?', ['Hypertext Markup Language', 'Hybridtext Markup Langue', 'Hypertext Makeup Language',
+    'Hyrbridtext Makeup Language'], 'Hypertext Markup Language'),
+
+    new Question('What does CSS stand for?', ['Creative Style Sheets', 'Cascading Style Slang', 'Creative Style Slang',
+    'Cascading Style Sheets'], 'Cascading Style Sheets'),
+
+    new Question('What is an array in Javascript' ['A collection of functions', 'An ordered list of values', 'A list of classes',
+    'An ordered list of ids'], 'An ordered list of values'),
+
+    new Question('What are HTML, CSS, and Javascript used for?' ['Crying yourself to sleep', 'Back end development',
+    'Accounting', 'Front end development'], 'Front end development')
+];
+
+let quiz = new Quiz(questions);
+
+askQuestion();
+
+function scores() {
+    let quizEnd =
+    `
+        
+}
+let time = 5;
