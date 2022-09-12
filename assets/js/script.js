@@ -53,3 +53,11 @@ function askQuestion() {
         showProgress();
     }
 }
+
+function userChoice(id, userChoice) {
+    let button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.userChoice(userChoice);
+        askQuestion():
+    }
+}
