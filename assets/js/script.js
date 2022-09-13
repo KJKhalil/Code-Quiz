@@ -10,8 +10,8 @@ class Quiz {
         return this.questions[this.questionIndex];
     }
 
-    userChoice(answer) {
-        if (this.getQuestions().isCorrect(answer)) {
+    userChoice(correctAnswer) {
+        if (this.getQuestions().isCorrect(correctAnswer)) {
             this.score++;
         }
         this.questionIndex++;
@@ -69,14 +69,16 @@ function progress() {
 }
 
 function scores() {
-    let quizEndHTML =
+    let quizEnd =
         `   
             <h1>Quiz Finished</h1>
             <h2 id='score'> You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
-            <div class='repeatquiz'> <a href='index.html'>Retake Quiz</a></div>
+            <div class='repeatquiz'> 
+                <a href='index.html'>Retake Quiz</a>
+            </div>
         `;
-    let quizElement = document.getElementById('quiz');
-    quizElement.innerHTML = quizEndHTML;
+        let quizElement = document.getElementById('quiz');
+        quizElement.innerHTML = quizEnd;
 }
 
 let questions = [
@@ -105,11 +107,11 @@ let time = document.getElementById('time');
 
 function startTimer() {
     let quizTimer = setInterval(function() {
-        if (quizTimer <= 0) {
+        if (quizTime <= 0) {
             clearInterval(quizTimer);
             scores();
         } else {
-            quizTimer--;
+            quizTime--;
             let second = Math.floor(quizTime % 60);
             let minute = Math.floor(quizTime / 60) % 60;
             time.innerHTML = `TIME: ${minute} : ${second}`;
