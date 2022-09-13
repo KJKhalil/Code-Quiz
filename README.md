@@ -5,7 +5,7 @@ This projects goal was to create a quiz on basic coding knowledge. The requireme
     -I created 3 htmls. 
         One for the start button page which contains the start button that references the page to the quiz page,
         One for the quiz page which contains the basic layout and the buttons for the the answers to the questions
-        One for the highschore page youll be taken to after you select "Submit Highscore".
+        One for the highschore page youll be taken to after you select "Submit Highscore"(Still being worked on).
         With each having their own designated css. 
 
     -I created a main javascript(script.js) which is referenced in the quiz.html. This javascript is where I have the functions and classes to:
@@ -17,9 +17,7 @@ This projects goal was to create a quiz on basic coding knowledge. The requireme
         Reduce the timer by a minute for every question answered incorrectly,
         Add additional HTML to the page when the quiz is finished or you run out of. This contains your score, a retake the quiz button, as well as a submit your highscore button.
 
-
-
-
+    -I am still working on the highscore page and function. However, everything else is fully completed, interactive, and responsive
 
 ## Code-Quiz Screenshot
 
