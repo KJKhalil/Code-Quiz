@@ -78,7 +78,7 @@ function scores() {
             <h2 id='score'> You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
             <div class='repeatquiz'> 
                 <a href='./quiz.html'>Retake Quiz</a>
-                <a href='./highscore.html'>Submit Highscore</a>
+                <a id='highscoreSubmit' href='./highscore.html'>Submit Highscore</a>
             </div>
         `;
     let quizElement = document.getElementById('quiz');

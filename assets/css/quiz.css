@@ -1,3 +1,4 @@
+/* .content positions the test on the webpage. */
 .content {
     display: flex;
     justify-content: center;
@@ -8,10 +9,12 @@
     padding: 0;
 }
 
+/* .quiz h1 determines the text color and style of "Coding Quiz" on the webpage. */
 .quiz h1 {
     font-size:50px;
 }
 
+/* all .header elements control the style and position of both the question progress bar and the time. */
 .header {
     display: flex;
     justify-content: space-between;
@@ -28,11 +31,13 @@
     font-weight: 600;
 }
 
+/* controls the style of the asked questions on the test. */
 .quiz #question {
     font-size: 25px;
     font-weight: 600;
 }
 
+/* controls the style and positioning of the A,B,C, and D answer btn's. */
 .btn {
     text-align: left;
     width: 100%;
@@ -40,6 +45,8 @@
     margin: 5px 0;
 }
 
+/* #score, .repeatquiz, and .repeatquiz a all refer to the position and styling of the added html after
+    after completition of the test as referenced in script.js line 77-83. */
 #score {
     text-align: center;
     font-size: 25px;
@@ -51,6 +58,9 @@
 
 .repeatquiz a {
     font-size: 25px;
-    border-width: 5px;
+    font-weight: 600;
+    color:black;
+    padding: 5px;
+    border-style:solid;
     border-color:black;
 }

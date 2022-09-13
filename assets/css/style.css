@@ -1,3 +1,4 @@
+/* .start controls where the start button is on the webpage */
 .start {
     display:flex;
     justify-content: center;
@@ -5,6 +6,7 @@
     height: 70vh;
 }
 
+/* .btn controls the font and colors of the start btn*/
 .btn{
     text-align: center;
     font-size: 80px;
