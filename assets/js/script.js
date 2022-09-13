@@ -14,6 +14,9 @@ class Quiz {
         if (this.getQuestions().isCorrect(correctAnswer)) {
             this.score++;
         }
+        else{
+            quizTime -= 60;
+        }
         this.questionIndex++;
     }
 
