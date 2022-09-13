@@ -39,3 +39,18 @@
     font-size: 25px;
     margin: 5px 0;
 }
+
+#score {
+    text-align: center;
+    font-size: 25px;
+}
+
+.repeatquiz {
+    text-align: center;
+}
+
+.repeatquiz a {
+    font-size: 25px;
+    border-width: 5px;
+    border-color:black;
+}

@@ -69,16 +69,17 @@ function progress() {
 }
 
 function scores() {
-    let quizEnd =
-        `   
+    let endQuiz =
+        `
             <h1>Quiz Finished</h1>
             <h2 id='score'> You Scored: ${quiz.score} of ${quiz.questions.length}</h2>
             <div class='repeatquiz'> 
-                <a href='index.html'>Retake Quiz</a>
+                <a href='./quiz.html'>Retake Quiz</a>
+                <a href='./highscore.html'>Submit Highscore</a>
             </div>
         `;
-        let quizElement = document.getElementById('quiz');
-        quizElement.innerHTML = quizEnd;
+    let quizElement = document.getElementById('quiz');
+    quizElement.innerHTML = endQuiz;
 }
 
 let questions = [
